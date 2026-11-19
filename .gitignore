@@ -1,0 +1,12 @@
+# Never publish the signing key
+keys/
+*.jks
+signing.properties
+
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.kotlin/
+*.apk

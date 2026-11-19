@@ -1,0 +1,11 @@
+.gradle/
+build/
+app/build/
+local.properties
+# The signing key and its passwords must never be published.
+keys/
+*.jks
+*.keystore
+signing.properties
+.idea/
+*.iml
