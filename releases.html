@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Backchannel release notes</title>
-<meta name="description" content="What is in each version of Backchannel, how to install and update it, and how to check your download.">
+<meta name="description" content="What changed in each version of Backchannel, with the file size and checksum to check your download.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/backchannel/releases.html">
 <meta name="theme-color" content="#f2f8f7" media="(prefers-color-scheme: light)">
@@ -12,83 +12,68 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Backchannel">
 <meta property="og:title" content="Backchannel release notes">
-<meta property="og:description" content="What is in each version of Backchannel, how to install and update it, and how to check your download.">
+<meta property="og:description" content="What changed in each version of Backchannel, with the file size and checksum to check your download.">
 <meta property="og:url" content="https://customgpter.github.io/backchannel/releases.html">
 <meta property="og:image" content="https://customgpter.github.io/backchannel/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Backchannel icon beside the words: private messages, phone to phone, with no server">
+<meta property="og:image:alt" content="A Backchannel chat between two phones, delivered over Tor">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/literata-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=1">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
 <div class="wrap">
-<a class="brand" href="./" aria-label="Backchannel home"><svg viewBox="0 0 108 108" aria-hidden="true"><defs><linearGradient id="brand-bc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17645d"/><stop offset="1" stop-color="#0a2426"/></linearGradient></defs><rect width="108" height="108" rx="24" fill="url(#brand-bc)"/><g transform="translate(54 54) scale(1.3) translate(-54 -57)"><path fill="#5eead4" fill-rule="evenodd" d="M36 32h36a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H56L42 83V72h-6a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8zM54 41a7 7 0 0 0-3.400 13.100L49 65h10l-1.600-10.900A7 7 0 0 0 54 41z"/></g></svg><span>Backchannel</span></a>
-<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./#first">Read first</a></li><li><a href="releases.html" aria-current="page">Releases</a></li><li><a class="more-apps" href="more-apps.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.500" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.500" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="licences.html">Licences</a></li></ul></nav>
+<a class="brand" href="./" aria-label="Backchannel home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#0f3f3d"/><g transform="translate(0 -3)"><path fill="#5eead4" fill-rule="evenodd" d="M36 32h36a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H56L42 83V72h-6a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8zM54 41a7 7 0 0 0-3.400 13.100L49 65h10l-1.600-10.900A7 7 0 0 0 54 41z"/></g></svg><span>Backchannel</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html" aria-current="page">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="./#download"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
 </div>
 </header>
 <main id="main" class="doc">
 <div class="wrap">
 <div class="measure">
 <h1>Release notes</h1>
-<p class="lede">What was added, improved and fixed in each version of Backchannel, newest first. The button always downloads the latest version.</p>
-<div class="get">
-<a class="button" href="https://github.com/CustomGPTer/backchannel/releases/latest/download/Backchannel.apk">Download the latest version</a>
-<p class="facts">Version 0.3. Android app file, 33.5 MB. Android 10 or later. Free.</p>
-<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway. See <a href="#checking">Checking your download</a>.</p>
-</div>
-<nav class="contents" aria-label="Versions"><strong>Versions</strong><ul><li><a href="#v0-3">0.3&ensp;First public release</a></li></ul></nav>
-
-<article class="release" id="v0-3">
-<p class="ver">Version 0.3</p>
-<h2>First public release</h2>
-<p class="when"><span class="tag">Latest</span>Released 19 November 2026</p>
-<p>This is an early release. It has not yet had an independent security review. Please <a href="https://github.com/CustomGPTer/backchannel/issues">report anything that does not work</a>.</p>
-<h3>Added</h3>
-<ul><li>One-to-one messages encrypted end to end with the Signal Protocol (libsignal), including its post-quantum key exchange.</li><li>No server: each phone runs Tor and has its own onion address, and messages go directly from one phone to the other.</li><li>Adding a contact by scanning a code or pasting an invite. Each code adds one person and stops working once used, or after seven days.</li><li>Messages are saved first and sent when the other phone can be reached. Each is marked Waiting, Delivered or Not delivered.</li><li>Photos from the gallery or the camera, shrunk and stripped of location and all other hidden details, with a preview before sending.</li><li>Voice notes of up to three minutes.</li><li>Disappearing messages with a timer per chat, from five minutes to four weeks, shared by both phones.</li><li>An encrypted database (SQLCipher). Its key is locked with your PIN or passphrase (Argon2id) and again with a key in the phone's security hardware.</li><li>A PIN or a passphrase, with a strength rating as you choose, and growing waits after wrong tries.</li><li>Fingerprint for opening the screens while the app is running. The PIN or passphrase is always needed after a restart.</li><li>A choice of when the screens lock: straight away, after one minute or after five.</li><li>A duress PIN that wipes every message, contact and key.</li><li>An encrypted backup file with its own passphrase, and restore at first setup. After a restore the phone sets up fresh keys with each contact by itself.</li><li>A contact's name and picture copied from one address-book entry you choose, with no permission to read the address book.</li><li>Notifications that say only New message. Screenshots and the recent-apps preview are blocked.</li><li>A check for newer versions, made over Tor, once a day and on demand.</li><li>Dark, light and follow-the-phone themes.</li></ul>
-</article>
-
-<h2 id="installing">Installing and updating</h2>
-<ul>
-<li>When you download, chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</li>
-<li>Open the downloaded file. The first time, Android asks you to allow your browser to install apps. Allow it, then go back and tap Install.</li>
-<li>Google Play Protect may say it does not recognise the app, or block it, because it did not come from Google Play. Choose More details, then Install anyway.</li>
-<li>Open Backchannel, choose a PIN or passphrase, and allow it to run in the background and to show notifications when it asks.</li>
-<li>Wait for the top of the screen to say Online. The first connection to Tor can take a minute or two.</li>
-<li>Tap Add contact. Show your code to someone who has Backchannel, or scan theirs. The <a href="./#first">things to read first</a> explain what to expect.</li>
-<li>To update, download the latest version and install it over the one you have. Your messages and contacts are kept. Afterwards, open the app and unlock it once.</li>
-<li>Every version is signed with the same key, so Android accepts an update only if it comes from the same developer.</li>
-</ul>
+<p class="lede">What changed in each version of Backchannel. The newest is at the top.</p>
+<section class="release" id="v0.3"><h2><span class="ver">Version 0.3</span> <span class="when">19 November 2026</span><span class="tag">Latest</span></h2><ul><li><b>First public release.</b> One-to-one messages encrypted end to end with the Signal Protocol (libsignal), including its post-quantum key exchange.</li><li>No server: each phone runs Tor and has its own onion address, and messages go directly from one phone to the other.</li><li>Adding a contact by scanning a code or pasting an invite. Each code adds one person and stops working once used, or after seven days.</li><li>Messages are saved first and sent when the other phone can be reached. Each is marked Waiting, Delivered or Not delivered.</li><li>Photos from the gallery or the camera, shrunk and stripped of location and all other hidden details, with a preview before sending.</li><li>Voice notes of up to three minutes.</li><li>Disappearing messages with a timer per chat, from five minutes to four weeks, shared by both phones.</li><li>An encrypted database (SQLCipher). Its key is locked with your PIN or passphrase (Argon2id) and again with a key in the phone's security hardware.</li><li>A PIN or a passphrase, with a strength rating as you choose, and growing waits after wrong tries.</li><li>Fingerprint for opening the screens while the app is running. The PIN or passphrase is always needed after a restart.</li><li>A choice of when the screens lock: straight away, after one minute or after five.</li><li>A duress PIN that wipes every message, contact and key.</li><li>An encrypted backup file with its own passphrase, and restore at first setup. After a restore the phone sets up fresh keys with each contact by itself.</li><li>A contact's name and picture copied from one address-book entry you choose, with no permission to read the address book.</li><li>Notifications that say only New message. Screenshots and the recent-apps preview are blocked.</li><li>A check for newer versions, made over Tor, once a day and on demand.</li><li>Dark, light and follow-the-phone themes.</li></ul></section>
 <h2 id="checking">Checking your download</h2>
-<p>The file for version 0.3 is 35,080,678 bytes. Its SHA-256 checksum is:</p>
-<p class="sum"><code>277a9348cfd948e019a1f2141c69fd1c73fa87688203010fbab4b0e2d0c4e6f0</code></p>
-<p>The signing certificate's SHA-256 fingerprint is:</p>
-<p class="sum"><code>FF:84:55:6D:8E:8A:09:A6:53:1E:B6:E9:29:1C:E6:8B:A8:88:81:A7:D0:4B:85:EB:80:D3:02:7D:C9:A9:F6:40</code></p>
-<p>Earlier downloads and their files are listed on <a href="https://github.com/CustomGPTer/backchannel/releases">GitHub Releases</a>. To report a problem with a version, <a href="https://github.com/CustomGPTer/backchannel/issues">open an issue on GitHub</a>.</p>
+<p>The file for version 0.3 is called <code>Backchannel.apk</code>. It is 35 MB (35,080,678 bytes). Its SHA-256 checksum is:</p>
+<p><code class="sum">277a9348cfd948e019a1f2141c69fd1c73fa87688203010fbab4b0e2d0c4e6f0</code></p>
+<p>On Windows, run <code>certutil -hashfile Backchannel.apk SHA256</code> and compare. Every version is signed with the same key, so each one installs over the last and keeps what you have saved.</p>
+<p>Older versions are on the <a href="https://github.com/CustomGPTer/backchannel/releases">GitHub releases page</a>.</p>
 </div>
 </div>
 </main>
 <footer class="colophon">
 <div class="wrap">
 <div>
+<a class="brand" href="./" aria-label="Backchannel home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#0f3f3d"/><g transform="translate(0 -3)"><path fill="#5eead4" fill-rule="evenodd" d="M36 32h36a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H56L42 83V72h-6a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8zM54 41a7 7 0 0 0-3.400 13.100L49 65h10l-1.600-10.900A7 7 0 0 0 54 41z"/></g></svg><span>Backchannel</span></a>
 <p>&copy; 2026 Jonathan Jackson. Backchannel is an independent app.</p>
-<p>This site uses no cookies and no tracking. It is set in Literata and Atkinson Hyperlegible.</p>
+<p>This site uses no cookies and no tracking. The only script on it unlocks the download once the lawful-use box is ticked.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
 </div>
-<nav aria-label="Footer"><ul>
+<nav aria-label="The app"><h2>The app</h2><ul>
 <li><a href="./">Home</a></li>
-<li><a href="releases.html">Release notes</a></li>
-<li><a href="more-apps.html">More apps</a></li>
-<li><a href="privacy.html">Privacy policy</a></li>
-<li><a href="terms.html">Terms of use</a></li>
-<li><a href="licences.html">Licences</a></li>
-<li><a href="https://github.com/CustomGPTer/backchannel">Source code</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
 <li><a href="https://github.com/CustomGPTer/backchannel/issues">Contact</a></li>
 </ul></nav>
 </div>
